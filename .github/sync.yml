@@ -1,3 +1,0 @@
-amzn/selling-partner-api-php-release@main:
-  - source: php/sdk/
-    dest: ./

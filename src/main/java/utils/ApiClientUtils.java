@@ -27,7 +27,7 @@ public class ApiClientUtils {
 
     public static <R> R run(AuthorizationSigner signer, String bathPath, Supplier<R> supplier) {
         Objects.requireNonNull(signer, "signer cannot be null");
-        Objects.requireNonNull(bathPath, "task cannot be null");
+        Objects.requireNonNull(bathPath, "bathPath cannot be null");
         try {
             ApiClient.setContext(ApiClient.AUTHORIZATION_SIGNER, signer);
             ApiClient.setContext(ApiClient.BASE_PATH, bathPath);
